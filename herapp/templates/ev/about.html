@@ -1,5 +1,52 @@
-{%extends 'base.html'%}{%load static%} {%block dropdown%}{%endblock%} {%block slider_section%}{%endblock%}{%block contact%}{%endblock%}{%block about%} {%endblock%} {%block clients%}{%endblock%} {%block brand%}{%endblock%}
+{%extends 'base.html'%}{%load static%} {%block slider_section%}{%endblock%}{%block contact%}{%endblock%}{%block about%} {%endblock%} {%block clients%}{%endblock%} {%block brand%}{%endblock%}
 <!-- footer -->
+{%block header%}    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="{%url 'anasayfa'%}"><img src="{% static 'ev/assets/images/heralogo.jpeg'%}" alt="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                    <li class="active">
+                                        <a href="{%url 'anasayfa'%}">Anasayfa</a> </li>
+                                    <li><a href="{%url 'special'%}">Nakliye</a></li>
+                                    <li><a href="{%url 'brand'%}">Ürünler</a> </li>
+                                    <li><a href="{%url 'contact'%}">Bize Ulaşın</a></li>
+                                    <li><a href="{%url 'about'%}">Biz Kimiz</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-6">
+                        <div class="location_icon_bottum">
+                            <ul>
+                                <li><img src="{% static 'ev/assets/icon/call.png'%}"/>05532623798</li>
+                                <li><img src="{% static 'ev/assets/icon/email.png'%}"/>hakankaplanlar35@gmail.com</li>
+                                <li><img src="{% static 'ev/assets/icon/loc.png'%}"/>İzmir</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header inner -->
+    </header>
+{%endblock%}
 {%block footer%}
 <footer>
     <div id="contact" class="footer">

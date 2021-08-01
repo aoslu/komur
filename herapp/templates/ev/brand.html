@@ -10,7 +10,7 @@
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a href="{%url 'anasayfa'%}"><img src="{% static 'ev/assets/images/logo.png'%}" alt="#"></a>
+                                    <a href="{%url 'anasayfa'%}"><img src="{% static 'ev/assets/images/heralogo.jpeg'%}" alt="#"></a>
                                 </div>
                             </div>
                         </div>
@@ -26,9 +26,6 @@
                                     <li><a href="{%url 'brand'%}">Ürünler</a> </li>
                                     <li><a href="{%url 'contact'%}">Bize Ulaşın</a></li>
                                     <li><a href="{%url 'about'%}">Biz Kimiz</a></li>
-                                        <li class="last">
-                                            <a href="#"><img src="{% static 'ev/assets/images/search_icon.png'%}" alt="icon" /></a>
-                                        </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -37,9 +34,9 @@
                     <div class="col-md-6 offset-md-6">
                         <div class="location_icon_bottum">
                             <ul>
-                                <li><img src="{% static 'ev/assets/icon/call.png'%}" />05532623798</li>
-                                <li><img src="{% static 'ev/assets/icon/email.png'%}" />hakankaplanlar35@gmail.com</li>
-                                <li><img src="{% static 'ev/assets/icon/loc.png'%}" />İZMİR</li>
+                                <li><img src="{% static 'ev/assets/icon/call.png'%}"/>05532623798</li>
+                                <li><img src="{% static 'ev/assets/icon/email.png'%}"/>hakankaplanlar35@gmail.com</li>
+                                <li><img src="{% static 'ev/assets/icon/loc.png'%}"/>İzmir</li>
                             </ul>
                         </div>
                     </div>
@@ -50,8 +47,7 @@
     </header>
 {%endblock%}
 {%block slider_section%}
-
-<br><br><br>
+<br><br><br><br>
 <center>
     <div class="container">
         <div class="row">
@@ -75,11 +71,24 @@
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="row">
-                                    {%for urunlerim in urunler%}
-                                    <div class=" col-md-4 ">
-                                        <a class="read-more" href="{%url 'anasayfa'%}">{{urunlerim.name}}</a>
+                                    <div class=" col-md-12 ">
+                                        <a class="read-more" href="{%url 'sosis'%}">PRES SOSİS-PİKNİK MANGAL KÖMÜRÜ</a>
                                     </div>
-                                    {%endfor%}
+                                </div>
+                                <div class="row">
+                                    <div class=" col-md-12 ">
+                                        <a class="read-more" href="{%url 'mese'%}">DOĞAL MEŞE KÖMÜRÜ</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class=" col-md-12 ">
+                                        <a class="read-more" href="{%url 'briket'%}">BRİKET TOZSUZ MANGAL KÖMÜRÜ</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class=" col-md-12 ">
+                                        <a class="read-more" href="{%url 'nargile'%}">NARGİLE KÖMÜRÜ</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -92,9 +101,6 @@
 <br><br>
 {%endblock%}
 <!--end slider-section-->
-<!--dropdown-->
-{% block dropdown %} {%endblock%}
-<!--end dropdown-->
 <!-- brand -->
 {%block brand%} {%endblock%}
 <!-- end brand -->
