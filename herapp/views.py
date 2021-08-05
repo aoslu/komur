@@ -88,3 +88,5 @@ def nargile(request):
     return render(request, "ev/nargile.html",context)
 
 
+def robot(request):
+    return render(request, "ev/robot.txt")

@@ -1,5 +1,5 @@
 from django.urls import path
-from herapp.views import anasayfa,about, contact, special, brand,briket, sosis, mese, nargile
+from herapp.views import anasayfa,about, contact, special, brand,briket, sosis, mese, nargile, robot
 
 urlpatterns = [
     path('',anasayfa, name="anasayfa"),
@@ -11,4 +11,5 @@ urlpatterns = [
     path('sosis/', sosis, name="sosis"),
     path('mese/', mese, name="mese"),
     path('nargile/', nargile, name="nargile"),
+    path('robot.txt/',robot, name="robot"),
 ]
